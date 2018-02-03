@@ -5,7 +5,7 @@ $('#comment').css('background', 'white');
 $('input').css('background', 'white'); /*for "Search" button has no id */
 $('A').css('color','royalblue');
 $('#content > h1:nth-child(1) > a').css('color','black');
-$("div.content h1").css('font-size','25px').css('height','');
+$("#content > h1").css('font-size','25px').css('height','100%').css('margin-top', '40px');
 $("div.entry_body h2").css('font-weight','bold').css('margin-bottom','20px').css('font-size','24px');
 $("#content > div.writeback").css('margin-top','100px');
 
