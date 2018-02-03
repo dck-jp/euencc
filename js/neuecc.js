@@ -5,8 +5,9 @@ $('#comment').css('background', 'white');
 $('input').css('background', 'white'); /*for "Search" button has no id */
 $('A').css('color','royalblue');
 $('#content > h1:nth-child(1) > a').css('color','black');
-$("div.content h1").css('font-size':'25px', 'height':'')
-$("div.entry_body h2").css('font-weight':'bold', 'margin-bottom':'20px', 'font-size':'24px');
+$("div.content h1").css('font-size','25px').css('height','');
+$("div.entry_body h2").css('font-weight','bold').css('margin-bottom','20px').css('font-size','24px');
+
 
 var url = window.location.href;
 if(url.match("neue.cc/\\d{4}/\\d{1,2}/[^./]+.html")) {
