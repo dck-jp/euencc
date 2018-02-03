@@ -7,7 +7,7 @@ $('A').css('color','royalblue');
 $('#content > h1:nth-child(1) > a').css('color','black');
 $("div.content h1").css('font-size','25px').css('height','');
 $("div.entry_body h2").css('font-weight','bold').css('margin-bottom','20px').css('font-size','24px');
-
+$("#content > div.writeback").css('margin-top','100px');
 
 var url = window.location.href;
 if(url.match("neue.cc/\\d{4}/\\d{1,2}/[^./]+.html")) {
