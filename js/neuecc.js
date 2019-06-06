@@ -10,6 +10,7 @@ $("div.entry_body h2").css('font-weight','bold').css('margin-bottom','20px').css
 $("#content > div.writeback").css('margin-top','100px');
 
 var url = window.location.href;
+//個別ページの場合
 if(url.match("neue.cc/\\d{4}/\\d{1,2}/[^./]+.html")) {
 	$(function(){
 	        var idcount = 1;
@@ -41,5 +42,24 @@ if(url.match("neue.cc/\\d{4}/\\d{1,2}/[^./]+.html")) {
 	                 + toc
 	                 + "</div>";
 	        $("div.entry_body").prepend(toc);
+	});
+}
+//一覧ページの場合
+else
+{
+	$(function(){		
+		$("div.entry_body", this).each(function(){
+			$(this).empty();
+			$(this).append( "<p>詳細はタイトルをクリック</p>" );
+		})
+
+		var toc = '<div style=\"border:solid 1px #000;padding-left:10px;margin-bottom:30px;font-size:16pt;\">'
+		toc += '<span style=\"color:#000;font-weight:bold;\">ページ一覧</span>'
+		toc += '<ul style=\"list-style-type:disc;\">';
+		$("#content h1", this).each(function(){
+			toc += '<li style=\"font-size:11pt;margin-bottom:4px\">・' + $(this).html() + "</li>";
+		});
+		toc += "</ul></div>";
+		$("#menu").prepend(toc);
 	});
 }
