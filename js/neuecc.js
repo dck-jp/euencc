@@ -53,7 +53,7 @@ else
 			$(this).append( "<p>詳細はタイトルをクリック</p>" );
 		})
 
-		var toc = '<div style=\"border:solid 1px #000;padding-left:10px;margin-bottom:30px;font-size:16pt;\">'
+		var toc = '<div id=pagetoc style=\"border:solid 1px #000;padding-left:10px;margin-bottom:30px;font-size:16pt;\">'
 		toc += '<span style=\"color:#000;font-weight:bold;\">ページ一覧</span>'
 		toc += '<ul style=\"list-style-type:disc;\">';
 		$("#content h1", this).each(function(){
@@ -61,5 +61,7 @@ else
 		});
 		toc += "</ul></div>";
 		$("#menu").prepend(toc);
+
+		$('#pagetoc > a').css('color','black');
 	});
 }
