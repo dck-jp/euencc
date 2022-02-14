@@ -1,7 +1,11 @@
-﻿$('body').css('background', 'white');
+﻿let fonts = '\'Helvetica Neue\', Arial, \'Hiragino Kaku Gothic ProN\', \'Hiragino Sans\', Meiryo, sans-serif';
+$('*').css('font-family', fonts);
+$('body').css('background', 'white');
 $('*').not('.csharp >span').css('color', 'black');
 $('#s').css('background', 'white');
 $('#comment').css('background', 'white');
+$('code').css('color', 'white');
+$('code').css('background', '#2d2d2d');
 $('input').css('background', 'white'); /*for "Search" button has no id */
 $('A').css('color','royalblue');
 $('#content > h1:nth-child(1) > a').css('color','black');
