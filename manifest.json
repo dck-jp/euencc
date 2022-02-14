@@ -1,6 +1,6 @@
 ﻿{
-  "manifest_version": 2,
-  "version": "0.4.0",
+  "manifest_version": 3,
+  "version": "0.5.0",
   "name": "euencc",
   "icons": { "32": "icon/32.png",
           "48": "icon/48.png",
@@ -8,7 +8,7 @@
   "description": "neue.ccを白くします。",
   "content_scripts": [
     {
-      "matches": ["http://neue.cc/*","http://d.hatena.ne.jp/neuecc/*"],
+      "matches": ["https://neue.cc/*","https://d.hatena.ne.jp/neuecc/*"],
       "js": ["js/jquery.min.js","js/neuecc.js"],
       "run_at": "document_end"
     }
